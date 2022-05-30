@@ -134,6 +134,7 @@ h1 {
 .logo {
     width: 5rem;
     height: 20%;
+    animation-duration: 3s;
 }
 
 main {
@@ -225,3 +226,28 @@ main {
     width: 300px;
 }
 
+.spotify{
+    /* animation-delay: 1s; */
+    animation-duration: 3s;
+    
+}
+
+.inicio{
+    animation-duration: 1.5s;
+}
+
+.musihack{
+    animation-duration: 1.7s;
+}
+
+.youtube{
+    animation-duration: 1.9s;
+}
+
+.musica{
+    animation-duration: 2.1s;
+}
+
+.registro{
+    animation-duration: 2.3s;
+}
