@@ -1,8 +1,56 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+/* .border {
+    border: 1px solid black;
+    background-color: lightcyan;
+} */
+/* INICIO DEL GRID */
+.grilla {
+
+
+    display: grid;
+    grid-template-columns: 20% 70% 10%;
+    grid-template-rows: 1frfr 1fr 1fr;
+
+
+    /* background-color: lightgreen;
+    border: 1 px solid black;
+    gap: 10px;
+    */
+}
+
+.flexible {
+    grid-column: 1/5;
+
+
+}
+
+.productos {
+    grid-column: 1/5;
+
+
+}
+
+.pie {
+    grid-column: 1/5;
+
+    height: 15vh;
+
+}
+
+@media all and (max-width: 600px) {
+
+    footer,
+    main,
+    header {
+        grid-column: 1/ span 2;
+    }
+}
+
 body {
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
     font-weight: 600;
@@ -10,8 +58,6 @@ body {
     line-height: 1.3em;
     font-size: 1.2rem;
     /*tamaño de la letra*/
-    margin: 0;
-    /*normaliza el body ya que el body trae margen por defecto*/
     position: relative;
 }
 
@@ -91,7 +137,7 @@ h1 {
 }
 
 main {
-   
+
     padding: 8rem;
 }
 
@@ -103,13 +149,15 @@ main {
     /*Las imagenes por defecto son inline*/
 }
 
-.video {
+/* .video {
     width: 100%;
     height: 100%;
-}
+} */
 
+
+/* Estilos del FOOTER */
 .footer {
-     background: whitesmoke;
+    background: whitesmoke;
     color: black;
     padding: 2 rem 0;
 
@@ -169,7 +217,7 @@ main {
 .icon-instagram {
     background: #3F60A5;
 }
-
+    /* ESTILOS DEL FORMULARIO (HAY MEJORAR) */
 .form {
     background-color: white;
     border: 1px solid #E1E1E1;
