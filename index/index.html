@@ -8,7 +8,8 @@
     <link rel="shortcut icon" href="img/favicon/favicon-32x32.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:wght@100&display=swap" rel="stylesheet">  
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />  
     <title>Inicio Jaime Altozano (Página no oficial)</title>
     <link href="../index/css/styles.css" rel="stylesheet" type="text/css" >
 </head>
@@ -18,14 +19,14 @@
       <header class="header  border flexible">
         <div class="container logo-nav-container">
           <a class="logo" href="#">
-            <img class="logo" src="./img/logoPaginaJaime.png    "/></a>
+            <img class="logo animate__animated animate__backInLeft" src="./img/logoPaginaJaime.png    "/></a>
           <nav class="navigation">
             <ul>
-              <li><a class="" href="#"> Inicio</a></li>
-              <li><a class="" href="page/musihack.html"> Musihack</a></li>
-              <li><a class="" href="page/youtube.html"> Youtube</a></li>
-              <li><a class="" href="page/musica.html"> Música</a></li>
-              <li><a class="" href="page/regristro.html" target="_blank">Registro</a>
+              <li><a class="inicio animate__animated animate__fadeInDown" href="#"> Inicio</a></li>
+              <li><a class="musihack animate__animated animate__fadeInDown" href="page/musihack.html"> Musihack</a></li>
+              <li><a class="youtube animate__animated animate__fadeInDown" href="page/youtube.html"> Youtube</a></li>
+              <li><a class="musica animate__animated animate__fadeInDown" href="page/musica.html"> Música</a></li>
+              <li><a class="registro animate__animated animate__fadeInDown" href="page/regristro.html" target="_blank">Registro</a>
               </li>
             </ul>
           </nav>
@@ -49,8 +50,9 @@
           <div class="container img">
             <img src="./img/ImagenPaginaInicio.png" width="400" />
           </div>
-          <div class="container video">
+          
             <h2>Ultimos Videos de Youtube</h2>
+        <div class="container wow animate__animated animate__slideInLeft spotify ">
             <iframe width="830" height="447" src="https://www.youtube.com/embed/JSGlJ00w8Zw?list=PLrNRWzkImhnzSGd771iyaswnwE6eyyvhe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
           <div class="container">
@@ -81,6 +83,7 @@
             Aunque su fuerte es Youtube, ha colaborado con medios tradicionales
             de forma habitual como lo es en RTVE.
           </p>
+          <div class="wow animate__animated animate__slideInRight spotify" data-wow-duration="2s">
           <iframe
             width="830"
             height="447"
@@ -90,6 +93,7 @@
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen
           ></iframe>
+        </div>
         </div>
       </main>
           <!-- PIE DE PAGINA -->
@@ -111,5 +115,11 @@
              </div>
         </footer>
     </div>
-    </body>
+    <script src="./JS/wow.min.js"></script> 
+    <script> 
+    new WOW().init(); 
+    </script>
+           
+              
+  </body>
 </html>

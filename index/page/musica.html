@@ -26,12 +26,26 @@
                 </a>
                 <nav class="navigation">
                     <ul>
-                        <li><a class="inicio logo animate__animated animate__bounceInDown" href="../index.html"> Inicio</a></li>
-                        <li><a class="musihack logo animate__animated animate__bounceInDown" href="musihack.html"> Musihack</a></li>
-                        <li><a class="youtube logo animate__animated animate__bounceInDown" href="youtube.html"> Youtube</a></li>
-                        <li><a class="musica logo animate__animated animate__bounceInDown" href="#"> Música</a></li>
                         <li>
-                            <a class="registro logo animate__animated animate__bounceInDown" href="regristro.html" target="_blank"> Registro</a>
+                            <a class="inicio animate__animated animate__fadeInDown" href="../index.html">
+                                Inicio</a>
+                        </li>
+                        <li>
+                            <a class="musihack animate__animated animate__fadeInDown" href="musihack.html">
+                                Musihack</a>
+                        </li>
+                        <li>
+                            <a class="youtube animate__animated animate__fadeInDown" href="youtube.html">
+                                Youtube</a>
+                        </li>
+                        <li>
+                            <a class="musica animate__animated animate__fadeInDown" href="#">
+                                Música</a>
+                        </li>
+                        <li>
+                            <a class="registro animate__animated animate__fadeInDown" href="regristro.html"
+                                target="_blank">
+                                Registro</a>
                         </li>
                     </ul>
                 </nav>
@@ -59,17 +73,20 @@
                     sonora de un videojuego (ficticio), al que se presentaron 106
                     personas. Mi ejemplo es el de «Pax, una aventura espacial».
                 </p>
-                <div class="animate__animated animate__rollIn spotify">
-                    <iframe src="https://open.spotify.com/embed?uri=spotify%3Aplaylist%3A3GmH5IwLhjm6APxxmVGsFO" width="300" height="380" frameborder="0" style="border-radius: 12px" allowtransparency="true" allow="encrypted-media"></iframe>
+                <div>
+                    <iframe src="https://open.spotify.com/embed?uri=spotify%3Aplaylist%3A3GmH5IwLhjm6APxxmVGsFO"
+                        width="300" height="380" frameborder="0" style="border-radius: 12px" allowtransparency="true"
+                        allow="encrypted-media"></iframe>
                 </div>
-                
 
                 <h2>¿Cómo compone su música?</h2>
-                <iframe width="830" height="447"
-                    src="https://www.youtube.com/embed/7FSAG-UpAS8?list=PLrNRWzkImhnwdOq0Newy9mk3kcEe4_2iz"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
+                <div class=" wow animate__animated animate__slideInLeft spotify">
+                    <iframe width="830" height="447"
+                        src="https://www.youtube.com/embed/7FSAG-UpAS8?list=PLrNRWzkImhnwdOq0Newy9mk3kcEe4_2iz"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
             </div>
         </main>
         <!-- PIE DE PAGINA -->
@@ -93,6 +110,10 @@
             </div>
         </footer>
     </div>
+    <script src="../JS/wow.min.js"></script> 
+    <script> 
+    new WOW().init(); 
+    </script>
 </body>
 
 </html>
