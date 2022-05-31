@@ -10,73 +10,79 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:wght@100&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link href="../css/styles.css" rel="stylesheet" type="text/css" >
 </head>
 <body>
-    <header class="header">
-        <div class="container logo-nav-container" >
-            <a class="logo" href="../index.html" >
-                <img  class="logo" src="../img/logoPaginaJaime.png">
-            </a>  
-        <nav class="navigation">
-            
+    <div class="grilla">
+        <!-- ENCABEZADO -->
+        <header class="header border flexible">
+            <div class="container logo-nav-container" >
+                <a class="logo" href="../index.html" >
+                    <img  class="logo animate__animated animate__backInLeft" src="../img/logoPaginaJaime.png">
+                </a>  
+            <nav class="navigation">
+                
+                <ul>
+                     <li><a class="inicio animate__animated animate__fadeInDown" href="../index.html"> Inicio</a></li>
+                    <li><a class="musihack animate__animated animate__fadeInDown" href="musihack.html"> Musihack</a></li>
+                    <li><a class="youtube animate__animated animate__fadeInDown" href="youtube.html"> Youtube</a></li>
+                    <li><a class="musica animate__animated animate__fadeInDown" href="musica.html"> Música</a></li>
+                    <li><a class="registro animate__animated animate__fadeInDown" href="#"> Registro</a></li>
+                </ul>
+        </nav>
+            </div>
+        </header>
+        <!-- CONTENIDO PRINCIPAL -->
+        <main class="main productos border">
+            <div class="container form">
+                <h1>Registrate</h1>
+                <form action="" method="POST">
+                    
+                    <legend>Es rápido y fácil</legend>
+                    <fieldset>
+                        Nombre: <br>
+                        <input type="text" name="name" placeholder="Ingrese su nombre" required><br>
+                        Apellido:<br>
+                        <input type="text" name="lastname" placeholder="Ingrese su apellido" required><br>
+                        Genero:<br>
+                        <input type="radio" name="gender" value="male" checked>Hombre<br>
+                        <input type="radio" name="gender" value="female">Mujer<br>
+                        <input type="radio" name="gender" value="other">Otro<br>
+                        Email:<br>
+                        <input type="email" name="email" placeholder="Ingrese su correo" required><br>
+                        Número de Contacto:<br>
+                        <input type="tel" name="numberphone" placeholder="(Código de área)+numero"><br>
+                        Fecha de nacimiento:<br>
+                        <input type="date" name="calendar"><br>
+                        <input type="submit" value="Enviar"><br>
+                    </fieldset>
+                    
+                    
+                
+                </form>
+            </div>
+        </main>
+          <!-- PIE DE PAGINA -->
+    <footer class="footer pie border" >
+        <div class="container footerlist" >
             <ul>
-                 <li><a class="" href="../index.html"> Inicio</a></li>
-                <li><a class="" href="musihack.html"> Musihack</a></li>
-                <li><a class="" href="youtube.html"> Youtube</a></li>
-                <li><a class="" href="musica.html"> Música</a></li>
-                <li><a class="" href="#"> Registro</a></li>
+                <li><a class="" href=""> Inicio</a></li>
+                <li><a class="" href=""> Musihack</a></li>
+                <li><a class="" href=""> Youtube</a></li>
+                <li><a class="" href=""> Música</a></li>
+                <li><a class="" href=""> Registro</a></li>
+                <li><a class="" href=""> Política de privacidad</a></li>
+                <li><a class="" href=""> Política de cookies</a></li>
             </ul>
-    </nav>
         </div>
-    </header>
-    <main class="main">
-        <div class="container form">
-            <h1>Registrate</h1>
-            <form action="" method="POST">
-                
-                <legend>Es rápido y fácil</legend>
-                <fieldset>
-                    Nombre: <br>
-                    <input type="text" name="name" placeholder="Ingrese su nombre" required><br>
-                    Apellido:<br>
-                    <input type="text" name="lastname" placeholder="Ingrese su apellido" required><br>
-                    Genero:<br>
-                    <input type="radio" name="gender" value="male" checked>Hombre<br>
-                    <input type="radio" name="gender" value="female">Mujer<br>
-                    <input type="radio" name="gender" value="other">Otro<br>
-                    Email:<br>
-                    <input type="email" name="email" placeholder="Ingrese su correo" required><br>
-                    Número de Contacto:<br>
-                    <input type="tel" name="numberphone" placeholder="(Código de área)+numero"><br>
-                    Fecha de nacimiento:<br>
-                    <input type="date" name="calendar"><br>
-                    <input type="submit" value="Enviar"><br>
-                </fieldset>
-                
-                
-            
-            </form>
-        </div>
-    </main>
-
-<footer class="footer" >
-    <div class="container footerlist" >
-        <ul>
-            <li><a class="" href=""> Inicio</a></li>
-            <li><a class="" href=""> Musihack</a></li>
-            <li><a class="" href=""> Youtube</a></li>
-            <li><a class="" href=""> Música</a></li>
-            <li><a class="" href=""> Registro</a></li>
-            <li><a class="" href=""> Política de privacidad</a></li>
-            <li><a class="" href=""> Política de cookies</a></li>
-        </ul>
+        <div class="social-bar social" class="container" >
+            <a  href="https://www.instagram.com/jaimealtozano/" class="icon icon-instagram" target="_blank"></a>
+            <a href="https://twitter.com/jaimealtozano" class="icon icon-twitter" target="_blank"></a>
+            <a href="https://www.youtube.com/channel/UCa3DVlGH2_QhvwuWlPa6MDQ" class="icon icon-youtube" target="_blank"></a>
+         </div>
+    </footer>
     </div>
-    <div class="social-bar social" class="container" >
-        <a  href="https://www.instagram.com/jaimealtozano/" class="icon icon-instagram" target="_blank"></a>
-        <a href="https://twitter.com/jaimealtozano" class="icon icon-twitter" target="_blank"></a>
-        <a href="https://www.youtube.com/channel/UCa3DVlGH2_QhvwuWlPa6MDQ" class="icon icon-youtube" target="_blank"></a>
-     </div>
-</footer>
+  
 </body>
 </html>
